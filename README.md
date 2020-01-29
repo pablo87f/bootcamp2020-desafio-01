@@ -45,11 +45,11 @@ $ node index.js
 
 
 ## Construido com 
-
-* [express](https://www.npmjs.com/package/express) - Biblioteca utilizada para tratar as requisições da API
-* [lodash](https://www.npmjs.com/package/lodash) -  Biblioteca utilizada para facilitar o tratamento de arrays
-* [node-localstorage](https://www.npmjs.com/package/node-localstorage) -  Biblioteca utilizada para armazenar os dados em arquivo
-* [nodemon](https://www.npmjs.com/package/nodemon) - Servidor de desenvolvimento
+* Javascript
+* [express](https://github.com/expressjs/express) - Biblioteca utilizada para tratar as requisições da API
+* [lodash](https://github.com/lodash/lodash) -  Biblioteca utilizada para facilitar o tratamento de arrays
+* [node-localstorage](https://github.com/lmaccherone/node-localstorage) -  Biblioteca utilizada para armazenar os dados em arquivo
+* [nodemon](https://github.com/remy/nodemon) - Servidor de desenvolvimento
 
 ## Licença
 
