@@ -18,8 +18,8 @@ Middlewares.checkProjectExists = (req, res, next) => {
 Middlewares.checkRequiredProjectFields = (req, res, next) => {
     const { id, title } = req.body
 
-    if (!id) return req.status(401).send('id is required')
-    if (!title) return req.status(401).send('title is required')
+    if (!id) return res.status(401).json({ error:'id is required'})
+    if (!title) return res.status(401).json({ error:'title is required'})
 
     return next()
 }
