@@ -9,5 +9,7 @@ const server = http.Server(app)
 app.use(express.json());
 app.use(routes);
 
-server.listen(3333)
+server.listen(3000)
+
+console.log('Server running into http://localhost:3000')
 
