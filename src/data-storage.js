@@ -61,11 +61,12 @@ DataStorage.updateById = async (entityName, id, newData) => {
 
 DataStorage.deleteById = async (entityName, id) => {
     let allData = DataStorage.getAll(entityName)
-    let indexRegister = _.findIndex(allData, { id: id })
+    let indexRegister = _.findIndex(allData, { id: parseInt(id) })
     if (indexRegister > -1) {
         allData.splice(indexRegister, 1);
     }
     DataStorage.setAll(entityName, allData)
+    return true
 }
 
 module.exports = DataStorage

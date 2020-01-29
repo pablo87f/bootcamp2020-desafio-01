@@ -32,6 +32,12 @@ module.exports = {
         return res.send(updatedProject)
     },
     async destroy(req, res) {
-
+        const { id } = req.params
+        const deleted = await DataStorage.deleteById(
+            DataStorage.Entities.Projects,
+            id
+        )
+        if(deleted) return res.send() 
+        return res.status(401).json({error: 'Could not deletes project'})
     }
 }
