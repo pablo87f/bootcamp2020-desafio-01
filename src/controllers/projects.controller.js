@@ -11,7 +11,7 @@ module.exports = {
     async store(req, res) {
         const { id, title } = req.body
 
-        const project = { id, title }
+        const project = { id, title , tasks: [] }
 
         const insertedProject = await DataStorage.insert(
             DataStorage.Entities.Projects,
