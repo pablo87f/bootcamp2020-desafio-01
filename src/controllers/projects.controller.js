@@ -21,7 +21,15 @@ module.exports = {
         return res.status(201).send(insertedProject)
     },
     async update(req, res) {
-
+        const { id } = req.params
+        const { title } = req.body
+        const project = { ...req.project, title }
+        const updatedProject = await DataStorage.updateById(
+            DataStorage.Entities.Projects,
+            id,
+            project
+        )
+        return res.send(updatedProject)
     },
     async destroy(req, res) {
 

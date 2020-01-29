@@ -53,9 +53,10 @@ DataStorage.insert = async (entityName, data) => {
 
 DataStorage.updateById = async (entityName, id, newData) => {
     let allData = DataStorage.getAll(entityName)
-    let indexRegister = _.findIndex(allData, { id: id })
+    let indexRegister = _.findIndex(allData, { id: parseInt(id) })
     allData[indexRegister] = newData
-    DataStorage.setAll(allData)
+    DataStorage.setAll(entityName, allData)
+    return allData[indexRegister]
 }
 
 DataStorage.deleteById = async (entityName, id) => {
