@@ -1,4 +1,4 @@
 yarn.lock
 node_modules/
-repository/*
+stored-data/*
 !.keep

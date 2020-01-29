@@ -5,7 +5,7 @@ let DataStorage = {}
 let localStorage = null
 
 if (typeof localStorage === "undefined" || localStorage === null) {
-    localStorage = new LocalStorage('../stored-data');
+    localStorage = new LocalStorage('./stored-data');
 }
 
 // -----------------------------------------
