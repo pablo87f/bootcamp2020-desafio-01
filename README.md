@@ -1,6 +1,6 @@
 # Bootcamp - Desafio 01
 
-Projeto do desafio 01 proposto no curso 'Bootcamp - GoStack' da RocketSeat. Uma API desenvolvida em Node.js para gererenciar dados de projetos e tarafas de projetos.
+Projeto do desafio 01 proposto no curso 'Bootcamp - GoStack' da RocketSeat. Uma API desenvolvida com Node.js para gererenciar dados de projetos e tarafas de projetos.
 
 ## Iniciando
 
