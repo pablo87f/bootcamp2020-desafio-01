@@ -1,8 +1,10 @@
 const express = require('express');
 const http = require('http')
 const routes = require('./routes')
+const Middlewares = require('./middlewares')
 
 const app = express();
+app.use(Middlewares.requestCouter)
 const server = http.Server(app)
 
 
