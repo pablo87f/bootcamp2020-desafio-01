@@ -26,7 +26,7 @@ Middlewares.checkRequiredProjectFields = (req, res, next) => {
 }
 
 
-Middlewares.requestCouter = (req, res, next) => {
+Middlewares.requestCounter = (req, res, next) => {
     requestCount++
     console.log(`Request count: ${requestCount}`)
 

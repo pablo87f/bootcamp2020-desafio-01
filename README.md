@@ -40,7 +40,7 @@ $ yarn dev
 ### Executando o projeto em produção
 ```
 ~/bootcamp2020-desafio-01 
-$ node index.js
+$ node src/index.js
 ```
 
 
